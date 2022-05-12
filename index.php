@@ -1,25 +1,6 @@
 <?php
 
-class employe{
-    private $nom;
-    private $prenom;
-    private $age;
+require_once('./secretaire.php');
+require_once('./manager.php');
 
-    public function__construct($nom,$prenom,$age)
-    {
-        $this ->nom=$nom;
-        $this ->prenom=$prenom;
-        $this ->age=(int)$age;
-
-    }
-    public function getNom(){
-        return $this->nom;
-    }
-
-    public function setNom($nom){
-        die();
-
-    } 
-    $this ->nom=$nom;
-
- 
+$al= new Manager('Capone', 'Al', 32);
